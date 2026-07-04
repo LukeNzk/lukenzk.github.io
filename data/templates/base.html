@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{% endblock %}</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ site_root }}style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar site-nav mb-5">
+    <div class="container" style="max-width: 860px;">
+      <a class="navbar-brand" href="{{ site_root }}">Coding Workbench</a>
+    </div>
+  </nav>
+
+  <img src="/img/ninja.png" style="height: 20rem;filter: opacity(0.05); position: fixed; top: 30%; left: 10%; transform: translate(-50%, -50%);"/>
+
+  <!-- <img src="/img/ninja.png" style="height: 15.5rem; margin-left: 5.5rem; filter: opacity(0.1); position: absolute; top: 10rem; left: 0;"/> -->
+
+  <main class="container pb-5" style="max-width: 860px;">
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="py-4 mt-5 text-center">
+    <div class="container" style="max-width: 860px;">
+      <small>Built with <a href="https://github.com/LukeNzk/inceptor" target="_blank" rel="noopener noreferrer">github.com/LukeNzk/inceptor</a></small>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

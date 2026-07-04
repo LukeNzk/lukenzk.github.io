@@ -1,0 +1,130 @@
+:root {
+    --primary-background: #0e1827;
+    --secondary-background: #722c2c;
+    --primary-text: #f4ebdb;
+    --secondary-text: #bd6e71;
+}
+
+body {
+    background-color: var(--primary-background);
+    color: var(--primary-text);
+}
+
+.site-nav {
+    box-shadow: 0px 0px 19px 2px #000000;
+    background-color: var(--secondary-background)
+}
+
+.site-nav .navbar-brand {
+    color: var(--primary-text);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.site-nav .navbar-brand:hover {
+    color: var(--primary-text);
+}
+
+.post-card {
+    background-color: #212b39;
+    /* border: 1px solid #30363d; */
+    border-radius: 8px;
+    transition: border-color 0.15s;
+    transition: box-shadow 0.15s;
+}
+
+.post-card:hover {
+    border-color: var(--secondary-text);
+    box-shadow: 0px 0px 20px 0px #151f2e;
+}
+
+.post-title-link {
+    color: var(--primary-text);
+    text-decoration: none;
+}
+
+.post-title-link:hover {
+    text-decoration: none;
+}
+
+.tag-badge {
+    background-color: var(--secondary-background);
+    color: var(--primary-text);
+    border: 1px solid var(--secondary-text);
+    font-size: 0.72rem;
+    font-weight: 500;
+}
+
+.post-meta {
+    color: #aeb4bb;
+    font-size: 0.875rem;
+}
+
+.back-link {
+    color: var(--secondary-text);
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.post-content {
+    line-height: 1.8;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3 {
+    color: var(--primary-text);
+    margin-top: 2rem;
+}
+
+.post-content a {
+    color: var(--secondary-text);
+}
+
+.post-content blockquote {
+    border-left: 4px solid #30363d;
+    padding-left: 1rem;
+    color: #8b949e;
+}
+
+.post-content img {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+.post-content table {
+    border-color: #30363d;
+}
+
+.post-content th,
+.post-content td {
+    border-color: #30363d !important;
+}
+
+.post-content pre {
+    background: transparent;
+    padding: 0;
+}
+
+.highlight {
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 1.25rem 0;
+}
+
+.highlight pre {
+    margin: 0;
+    padding: 1rem 1.25rem;
+    font-size: 0.875rem;
+}
+
+footer {
+    border-top: 1px solid #30363d;
+    color: #8b949e;
+}
+
+{{ pygments_css }}
