@@ -126,5 +126,3 @@ footer {
     border-top: 1px solid #30363d;
     color: #8b949e;
 }
-
-{{ pygments_css }}
