@@ -21,7 +21,7 @@
       {% endif %}
     </div>
   </div>
-  <div class="post-meta mb-2">{{ post.date }}</div>
+  <div class="post-meta mb-2">{{ post.date }} &middot; {{ post.read_time }} min</div>
   {% if post.excerpt %}
   <p class="mb-0 post-meta">{{ post.excerpt | striptags | truncate(220) }}</p>
   {% endif %}
