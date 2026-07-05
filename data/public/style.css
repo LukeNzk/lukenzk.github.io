@@ -29,6 +29,8 @@ body {
     background-color: #212b39;
     /* border: 1px solid #30363d; */
     border-radius: 8px;
+    position: relative;
+    padding-bottom: 2.25rem;
     transition: border-color 0.15s;
     transition: box-shadow 0.15s;
 }
@@ -53,6 +55,16 @@ body {
     border: 1px solid var(--secondary-text);
     font-size: 0.72rem;
     font-weight: 500;
+    max-height: 1.5rem;
+}
+
+.ai-badge {
+    background-color: var(--primary-background);
+    color: var(--primary-text);
+    /* border: 1px solid var(--secondary-text); */
+    font-size: 0.72rem;
+    font-weight: 500;
+    max-height: 1.5rem;
 }
 
 .post-meta {

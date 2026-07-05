@@ -1,7 +1,8 @@
 ---
 title: Hello World
 date: 2026-06-28
-tags: python, static-site, programming
+tags: python, web
+vibe: true
 ---
 
 Welcome to **blog-inceptor** — a minimal static blog generator written in Python. No Node.js, no frameworks, no CMS. Just Markdown, Jinja2 templates, and clean HTML.
